@@ -1,0 +1,18 @@
+.button-color{
+    background-color: blue;
+    width: 200px;   
+    height: 50px;
+    color: aliceblue;
+    border: none;
+}
+.form-layout{
+    border: 2px solid black;
+    background-color: rgb(221, 21, 138);
+    height: 300px;
+    width: 600px;
+    color: aliceblue;
+}
+.form-input{
+    width: 280px;
+    height: 30px;
+}
