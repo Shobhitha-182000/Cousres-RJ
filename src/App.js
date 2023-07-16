@@ -12,11 +12,16 @@ function App() {
       return [ ...prevCoarse, coarseName];
     });
   };
+  const removeHandler=(index)=>{
+    const updateCoarse=[...coarse];
+    updateCoarse.splice(index, 1);
+    setCoarse(updateCoarse);
+  }
 
   return (
     <div className="App">  
-      <CoarseForm onSaveCoarse={saveCoarseHandler} />
-      <CoarseList item={coarse} />
+      <CoarseForm onSaveCoarse={saveCoarseHandler}  />
+      <CoarseList item={coarse} onDeleteCoarse={removeHandler} />
     </div>
   );
 }
